@@ -1,0 +1,106 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>导航栏切换div</title>
+    <script src="js/jquery-3.4.1.js"></script>
+    <style>
+        /*整体容器*/
+        .nav {
+            margin: 0 0 0 0;
+            padding: 5px 0 0 0;
+            width: 480px;
+            height: 32px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #226394;
+        }
+        /*未选中不悬停*/
+        .nav li {
+            font-size: 16px;
+            margin: 0 5px;
+            padding: 0 8px 0 8px;
+            float: left;
+            width: 64px;
+            height: 32px;
+            color: white;
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /*悬停&选中*/
+        .nav li:hover,.selected{
+            font-size: 16px;
+            background-color: white;
+            color: #226394;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .selected span{
+            font-size: 16px;
+            background-color: white;
+            color: #226394;
+        }
+        /*下方容器*/
+        .content{
+            height: 80px;
+            padding: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="nav">
+        <li class="selected"><span>公告通知</span></li>
+        <li><span>学术动态</span></li>
+        <li><span>项目申报</span></li>
+        <li><span>招标采购</span></li>
+    </ul>
+    <div class="content">
+        <div class="list">
+            <p>姓名：</p>
+            <p>&nbsp;&nbsp;&nbsp;黎明</p>
+        </div>
+        <div  class="list">
+            <p>年龄：</p>
+            <p>&nbsp;&nbsp;&nbsp;22</p>
+        </div>
+        <div  class="list">
+            <p>性别：</p>
+            <p>&nbsp;&nbsp;&nbsp;男</p>
+        </div>
+        <div  class="list">
+            <p>班级：</p>
+            <p>&nbsp;&nbsp;&nbsp;商务班级</p>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            //获取点击事件的对象
+            $(".nav li").click(function(){
+                //获取要显示或隐藏的对象
+                var divShow = $(".content").children('.list');
+                //判断当前对象是否被选中，如果没选中的话进入if循环
+                if (!$(this).hasClass('selected')) {
+                    //获取当前对象的索引
+                    var index = $(this).index();
+                    //当前对象添加选中样式并且其同胞移除选中样式；
+                    $(this).addClass('selected').siblings('li').removeClass('selected');
+                    //索引对应的div块显示
+                    $(divShow[index]).show();
+                    //索引对应的div块的同胞隐藏
+                    $(divShow[index]).siblings('.list').hide();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

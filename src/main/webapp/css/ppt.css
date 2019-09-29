@@ -1,0 +1,66 @@
+/*PPT*/
+#lunbobox {
+    width:1033px;
+    height:362px;
+    position:relative;
+}
+.lunbo {
+    width:1033px;
+    height:362px;
+}
+.lunbo img {
+    width:1033px;
+    height:362px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#lunbobox ul {
+    width:285px;
+    position:absolute;
+    bottom:10px;
+    right:0;
+    z-index:5;
+}
+#lunbobox ul li {
+    cursor:pointer;
+    width:25px;
+    height:10px;
+    border:1px solid #cccccc;
+    float:left;
+    list-style:none;
+    background:#cccccc;
+    text-align:center;
+    margin:0 5px 0 0;
+}
+#toleft {
+    display:none;
+    width:30px;
+    height:100px;
+    font-size:40px;
+    line-height:100px;
+    text-align:center;
+    color:#f4f4f4;
+    position:absolute;
+    top:90px;
+    left:12px;
+    cursor:pointer;
+    z-index:99;
+    opacity:0.4;
+}
+#toright {
+    display:none;
+    width:30px;
+    height:100px;
+    font-size:40px;
+    line-height:100px;
+    text-align:center;
+    color:#f4f4f4;
+    position:absolute;
+    top:90px;
+    right:0;
+    cursor:pointer;
+    z-index:99;
+    opacity:0.4;
+}
+

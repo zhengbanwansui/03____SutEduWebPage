@@ -1,0 +1,144 @@
+body{
+    margin:0;
+    padding:0;
+}
+#page_head_01{
+    height:176px;
+    width:100%;
+    background-image: url("../image/page_head_pic_bg.png");
+}
+#coverTool{
+    height:176px;
+    width:1033px;
+    margin:0 auto;
+}
+#sutLogo{
+    height:176px;
+    width:471px;
+    background-image: url("../image/page_head_pic_logo.png");
+    float:left;
+}
+#langChange{
+    padding-top: 30px;
+    padding-right: 40px;
+    float:right;
+}
+#page_head_02{
+    background-color: #226394;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+}
+#topBar{
+    width: 1000px;
+    height: 40px;
+    display: block;
+    margin:0 auto;
+}
+.topBarItem{
+    text-decoration:none;
+    width: 76px;
+    height: 40px;
+    text-align:center;
+    line-height:40px;
+    color: white;
+    float: left;
+}
+#page_foot_01{
+    width: 100%;
+    background-color: #226394;
+}
+#footBar{
+    width: 1000px;
+    height: 61px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+#footBarGuide{
+    height: 55px;
+    width: 230px;
+    background-image: url("../image/page_foot_pic_guide.png");
+}
+.footBarItem{
+    margin: 0 16px;
+    text-decoration:none;
+    height: 55px;
+    text-align:center;
+    line-height:55px;
+    color: white;
+}
+#page_foot_02{
+    width: 100%;
+    height: 95px;
+    background-color: #d1f0ff;
+}
+#page_foot_logo{
+    width: 1034px;
+    height: 95px;
+    margin: 0 auto;
+    background-image: url("../image/page_foot_pic_logo.png");
+}
+#page_body{
+    background-color: #eeeeee;
+}
+#page_body_cover{
+    width: 1033px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+#centerBar{
+    height: 101px;
+}
+#centerBarLogoBG{
+    background-image: url("../image/ziQiangDuXingBG.jpg");
+    height: 101px;
+    width: 220px;
+    float: left;
+}
+#centerBarLogo{
+    background-image: url("../image/ziQiangDuXing.jpg");
+    height: 101px;
+    width: 168px;
+    margin: 0 26px 0 26px;
+}
+/*
+justify-content  在主轴上的对齐方式
+align-items  在交叉轴上的对齐方式
+ */
+#centerBarMain{
+    height: 101px;
+    width: 774px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.centerBarMainItem{
+    height: 101px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.centerBarIcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.centerBarWord{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+#page_body_main{
+    width: 1003px;
+    height: 335px;
+    margin: 15px auto 0 auto;
+    display: flex;
+}

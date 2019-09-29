@@ -1,0 +1,17 @@
+body,ul,li,ol,img{margin: 0;padding: 0;}
+li{list-style: none;}
+
+.example{}
+.example ol{position:relative;width: 80px;height: 20px;top:-30px;left:60px;}
+.example ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}
+.example ol li.seleted{background: #1AA4CA;}
+
+.example1{}
+.example1 ol{position:relative;width: 80px;height: 20px;top:-30px;left:60px;}
+.example1 ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}
+.example1 ol li.seleted{background: #1AA4CA;}
+
+.pptChangeLeft{}
+.pptChangeLeft ol{position:relative;width: 80px;height: 20px;top:-50px;left:170px;}
+.pptChangeLeft ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}
+.pptChangeLeft ol li.seleted{background: #1AA4CA;}
